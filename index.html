@@ -1,36 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="stylesheet" href="reset.css">
-  <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="index.css" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>FAQ Accordion Card</title>
-</head>
-<body>
-  <!-- How many team members can I invite?
-  You can invite up to 2 additional users on the Free plan. There is no limit on 
-  team members for the Premium plan.
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  What is the maximum file upload size?
-  No more than 2GB. All files in your account must fit your allotted storage space.
+    <title>FAQ Accordion Card</title>
+  </head>
+  <body>
+    <main>
+      <div id="card">
+        <div id="card__illustration-container">
+          <img
+            src="images/illustration-woman-online-mobile.svg"
+            alt="Woman browsing the internet"
+            class="mobile-illustration__component"
+            id="mobile-illustration__desktop"
+          />
+          <img
+            src="images/bg-pattern-mobile.svg"
+            alt="Illustration shadow"
+            class="mobile-illustration__component"
+            id="mobile-illustration__shadow"
+          />
 
-  How do I reset my password?
-  Click “Forgot password” from the login page or “Change password” from your profile page.
-  A reset link will be emailed to you.
+          <div id="desktop-illustration__desktop-container">
+            <img
+              src="images/illustration-woman-online-desktop.svg"
+              alt="Woman browsing the internet"
+              class="desktop-illustration__component"
+              id="desktop-illustration__desktop"
+            />
+          </div>
+          <img
+            src="images/illustration-box-desktop.svg"
+            alt="Box illustration"
+            class="desktop-illustration__component"
+            id="desktop-illustration__box"
+          />
+          <div id="desktop-illustration__bg-container">
+            <img
+              src="images/bg-pattern-desktop.svg"
+              alt="Illustration shadow"
+              class="desktop-illustration__component"
+              id="desktop-illustration__bg"
+            />
+          </div>
+        </div>
 
-  Can I cancel my subscription?
-  Yes! Send us a message and we’ll process your request no questions asked.
+        <div id="card__faq-section">
+          <h1 id="faq__heading">FAQ</h1>
 
-  Do you provide additional support?
-  Chat and email support is available 24/7. Phone lines are open during normal business hours. -->
-</body>
+          <div class="faq__container">
+            <button type="button" class="faq__button">
+              <p class="faq__question">How many team members can I invite?</p>
+              <img
+                src="images/icon-arrow-down.svg"
+                alt="Arrow icon"
+                class="faq__arrow-icon"
+              />
+            </button>
+            <p class="faq__answer faq__answer--hidden">
+              You can invite up to 2 additional users on the Free plan. There is
+              no limit on team members for the Premium plan.
+            </p>
+          </div>
+
+          <div class="faq__container">
+            <button type="button" class="faq__button faq__button--selected">
+              <p class="faq__question faq__question--selected">
+                What is the maximum file upload size?
+              </p>
+              <img
+                src="images/icon-arrow-down.svg"
+                alt="Arrow icon"
+                class="faq__arrow-icon faq__arrow-icon--selected"
+              />
+            </button>
+            <p class="faq__answer faq__answer--hidden faq__answer--visible">
+              No more than 2GB. All files in your account must fit your allotted
+              storage space.
+            </p>
+          </div>
+
+          <div class="faq__container">
+            <button type="button" class="faq__button">
+              <p class="faq__question">How do I reset my password?</p>
+              <img
+                src="images/icon-arrow-down.svg"
+                alt="Arrow icon"
+                class="faq__arrow-icon"
+              />
+            </button>
+            <p class="faq__answer faq__answer--hidden">
+              Click “Forgot password” from the login page or “Change password”
+              from your profile page. A reset link will be emailed to you.
+            </p>
+          </div>
+
+          <div class="faq__container">
+            <button type="button" class="faq__button">
+              <p class="faq__question">Can I cancel my subscription?</p>
+              <img
+                src="images/icon-arrow-down.svg"
+                alt="Arrow icon"
+                class="faq__arrow-icon"
+              />
+            </button>
+            <p class="faq__answer faq__answer--hidden">
+              Yes! Send us a message and we'll process your request no questions
+              asked.
+            </p>
+          </div>
+
+          <div class="faq__container">
+            <button type="button" class="faq__button">
+              <p class="faq__question">Do you provide additional support?</p>
+              <img
+                src="images/icon-arrow-down.svg"
+                alt="Arrow icon"
+                class="faq__arrow-icon"
+              />
+            </button>
+            <p class="faq__answer faq__answer--hidden">
+              Chat and email support is available 24/7. Phone lines are open
+              during normal business hours.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="index.js"></script>
+  </body>
 </html>
