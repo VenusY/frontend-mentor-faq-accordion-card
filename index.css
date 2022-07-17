@@ -129,6 +129,18 @@ main {
 
 /* Altered States */
 
+.faq__button {
+  transition: padding-bottom 0.25s;
+}
+
+.faq__arrow-icon {
+  transition: transform 0.25s;
+}
+
+.faq__answer {
+  transition: height 0.25s;
+}
+
 .faq__button--selected {
   padding-bottom: .625rem;
 }
@@ -142,11 +154,13 @@ main {
 }
 
 .faq__answer--hidden {
-  display: none;
+  height: 0;
+  overflow: hidden;
 }
 
 .faq__answer--visible {
   display: block;
+  height: 2.25rem;
   margin-bottom: 1rem;
 }
 
@@ -161,15 +175,11 @@ main {
 
 /* Hover/Focus End */
 
-@media screen and (max-height: 42.5rem) {
-  /* Layout */
-
+@media screen and (max-width: 69.9375rem) and (max-height: 42.5rem) {
   main {
     height: auto;
-    padding: 3.125rem;
+    padding: 4rem;
   }
-
-  /* Layout End */
 }
 
 /* ===== MOBILE END ===== */
@@ -199,7 +209,7 @@ main {
     display: flex;
     justify-content: space-between;
     width: 57.5rem;
-    margin: 0;
+    margin: 0 0 0 2.5rem;
     padding: 0 6.875rem 0 0;
   }
 
@@ -262,6 +272,13 @@ main {
   }
 
   /* Layout End */
+}
+
+@media screen and (min-width: 70rem) and (max-height: 34.375rem) {
+  main {
+    height: auto;
+    padding: 4rem;
+  }
 }
 
 /* ===== DESKTOP END ===== */
