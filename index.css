@@ -237,14 +237,16 @@ main {
   }
   
   #desktop-illustration__desktop {
+    width: 29.5rem;
     position: absolute;
     right: 0;
   }
   
   #desktop-illustration__box {
+    width: 11.9375rem;
     position: absolute;
     top: 12.5rem;
-    left: -5.875rem;
+    left: -5.75rem;
     z-index: 1;
   }
   
